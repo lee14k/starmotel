@@ -17,6 +17,10 @@
     justify-content: space-around;
     animation: scroll-horizontal 20s linear infinite;
 }
+.blue-star-background {
+  background-image: url('../public/blue-star-background.png');
+  background-size:cover;
+}
 
 @keyframes scroll-horizontal {
   0% {

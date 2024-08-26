@@ -30,7 +30,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className={`${libre.className} text-4xl lg:text-6xl font-bold`} >
+    <div className={`text-4xl lg:text-6xl font-bold`} >
       {" "}
       {/* Added a surrounding div */}
       {isMobile ? (
