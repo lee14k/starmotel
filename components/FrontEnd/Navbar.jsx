@@ -9,21 +9,11 @@ import { Libre_Caslon_Display } from "next/font/google";
 
 const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  {
-    name: "Services",
-    href: "/",
-    children: [
-      { name: "Overhead Garage Doors", href: "/overhead-garage-doors" },
-      { name: "Commercial Doors", href: "/commercial-doors" },
-      { name: "Openers", href: "/openers" },
-      { name: "Loading Docks", href: "/loading-docks" },
-    ],
-  },
-  { name: "Our Team", href: "/our-team" },
-  { name: "Our Work", href: "/our-work" },
-
-  { name: "Contact", href: "/contact" },
+  { name: "Home", href: "/", current: true},
+  { name: "Book", href: "/book" },
+  { name: "About", href: "/about" },
+  { name: "Nearby", href: "/nearby" },
+  { name: "Our Rooms", href: "/our-rooms" },
 ];
 
 
