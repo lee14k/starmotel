@@ -6,16 +6,29 @@
     height:100vh;
 }
 
-.carousel-primary{
+.carousel-primary li {
+  width:100%;
+  margin-left:20px;
+  border-radius:14px;
+}
+
+.carousel-primary,
+.carousel-secondary{
   top:26%;
   left:100%;
   width:100%;
-    overflow:hidden;
-    position:absolute;
-    white-space: nowrap;
-    display:flex;
-    justify-content: space-around;
-    animation: scroll-horizontal 20s linear infinite;
+  overflow:hidden;
+  position:absolute;
+  white-space: nowrap;
+}
+.carousel-primary {
+  display:flex;
+  justify-content: space-around;
+  animation: scroll-horizontal 20s linear infinite;
+}
+.carousel-secondary {
+  animation: scroll-horizontal 20s linear infinite;
+  animation-delay:10s;
 }
 .blue-star-background {
   background-image: url('../public/blue-star-background.png');
@@ -24,7 +37,7 @@
 
 @keyframes scroll-horizontal {
   0% {
-  left:0;
+  left:100%;
   }
 
   100% {
