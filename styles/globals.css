@@ -7,6 +7,9 @@
   background-size:cover;
 }
 
+.review-star-background {
+  background-image: url('../public/review-star-bg.png');
+}
 
 .scroll-container {
   height: 20vh;
