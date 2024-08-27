@@ -2,45 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-.scroll-container{
-    height:100vh;
-}
-
-.carousel-primary li {
-  width:100%;
-  margin-left:20px;
-  border-radius:14px;
-}
-
-.carousel-primary,
-.carousel-secondary{
-  top:26%;
-  left:100%;
-  width:100%;
-  overflow:hidden;
-  position:absolute;
-  white-space: nowrap;
-}
-.carousel-primary {
-  display:flex;
-  justify-content: space-around;
-  animation: scroll-horizontal 20s linear infinite;
-}
-.carousel-secondary {
-  animation: scroll-horizontal 20s linear infinite;
-  animation-delay:10s;
-}
 .blue-star-background {
   background-image: url('../public/blue-star-background.png');
   background-size:cover;
 }
 
+
+.scroll-container {
+  height: 20vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  animation: scroll-horizontal 20s linear infinite;
+  width: max-content;
+}
+
+.carousel ul {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.carousel li {
+  width: 100%;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes scroll-horizontal {
   0% {
-  left:100%;
+    transform: translateX(0);
   }
-
   100% {
-    left:-100%;
+    transform: translateX(-50%);
   }
 }
+

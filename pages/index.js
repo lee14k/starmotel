@@ -7,7 +7,9 @@ export default function Home() {
   return (
    <div>
      <Hero/>
-       <SideScrollerHero/>
+       <div>
+           <SideScrollerHero/>
+       </div>
      <TriplePhotoStarBackground/>
    </div>
   );
