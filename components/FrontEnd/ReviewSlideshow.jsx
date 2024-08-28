@@ -33,7 +33,7 @@ export default function ReviewSlideshow() {
         }
     ]
     return (
-        <div className="flex flex-col justify-center items-center review-star-background h-[40rem] ">
+        <div className="flex flex-col justify-center items-center review-star-background h-[40rem] text-center">
             <h1 className="bg-inherit text-starblue text-6xl font-bold">GUEST REVIEWS</h1>
             <div className="flex justify-center gap-24 ">
 
@@ -47,7 +47,7 @@ export default function ReviewSlideshow() {
                             className={`slide flex flex-col justify-center items-center transition-opacity duration-0 gap-6 ${index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"}`}
                             style={{position: index === activeIndex ? 'relative' : 'absolute'}}
                         >
-                            <p className="pb-6 text-3xl tracking-wide text-center py-16">{review.content}</p>
+                            <p className="pb-6 mx-24 lg:mx-0 lg:text-3xl tracking-wide text-center py-16">{review.content}</p>
                             <h3 className="text-starblue text-3xl ">{review.name}</h3>
                         </div>
                     ))}

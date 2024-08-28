@@ -6,7 +6,7 @@ export default function Hero() {
         <div>
 
             <div className="grid lg:grid-cols-2">
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center text-center">
                     <Navbar/>
                     <Image src="/star-motel-logo.png" width={400} height={400} alt=""/>
                     <div className="flex flex-col justify-center items-center gap-6 pb-12">

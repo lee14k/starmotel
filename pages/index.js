@@ -78,6 +78,7 @@ export default function Home() {
                 photoURL="/Rocks-Sunrise-8901.jpg"
                 backgroundColor="bg-white"
                 headerColor="text-starorange"
+                buttonTextColor="text-white"
             />
             <About
                 idRelativeLinking="local-attractions"

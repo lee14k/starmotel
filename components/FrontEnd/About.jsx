@@ -23,7 +23,7 @@ export default function About({
         {text: buttonTwo, url: buttonTwoURL},
     ]
     return (
-        <div className={`${backgroundColor} grid grid-cols-3 h-[60rem]`} id={`${idRelativeLinking}`}>
+        <div className={`${backgroundColor} grid grid-cols-3 h-[70rem]`} id={`${idRelativeLinking}`}>
             <div className="lg:col-span-2" style={{color: fontColor}}>
                 <div className="mx-24">
                     <h1 className={`${headerColor} text-6xl font-bold`}>{header}</h1>
@@ -35,7 +35,7 @@ export default function About({
                     {buttons.map((button, index) => (
                         <a href={`${button.url}`} key={index}>
                             <button
-                                className={`${buttonBackgroundColor} ${buttonBorderColor} ${buttonTextColor}`}>{button.text}</button>
+                                className={`${buttonBackgroundColor} ${buttonBorderColor} ${buttonTextColor} py-8 px-4 text-3xl font-bold`}>{button.text}</button>
                         </a>
                     ))}
                 </div>
