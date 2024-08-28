@@ -13,14 +13,15 @@ export default function About({
                                   fontColor,
                                   buttonBackgroundColor,
                                   buttonBorderColor,
-                                  buttonTextColor
+                                  buttonTextColor,
+                                  idRelativeLinking
                               }) {
     const buttons = [
         {text: buttonOne, url: buttonOneURL},
         {text: buttonTwo, url: buttonTwoURL},
     ]
     return (
-        <div className="grid lg:grid-cols-3" style={{backgroundColor: backgroundColor}}>
+        <div className="grid lg:grid-cols-3" style={{backgroundColor: backgroundColor}} id={`${idRelativeLinking}`}>
             <div className="col-span-2" style={{color: fontColor}}>
                 <div>
                     <h1>{header}</h1>

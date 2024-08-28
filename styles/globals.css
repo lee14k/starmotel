@@ -3,64 +3,65 @@
 @tailwind utilities;
 
 .blue-star-background {
-  background-image: url('../public/blue-star-background.png');
-  background-size:cover;
+    background-image: url('../public/blue-star-background.png');
+    background-size: cover;
 }
 
 .review-star-background {
-  background-image: url('../public/review-star-bg.png');
-  background-size:cover;
+    background-image: url('../public/review-star-bg.png');
+    background-size: cover;
 }
 
 .scroll-container {
-  height: 20vh;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+    height: 15vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .carousel {
-  display: flex;
-  animation: scroll-horizontal 20s linear infinite;
-  width: max-content;
+    display: flex;
+    animation: scroll-horizontal 20s linear infinite;
+    width: max-content;
 }
 
 .carousel ul {
-  display: flex;
-  flex-shrink: 0;
-  justify-content: space-around;
-  align-items: center;
-  white-space: nowrap;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-around;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .carousel li {
-  width: 100%;
-  margin-left: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes scroll-horizontal {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
+
 .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: opacity 1s ease-in-out;
-  z-index: 1;
-  background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+    background-repeat: no-repeat;
 }
 
 .slide.active {
-  z-index: 2;
-  transition: opacity 1s ease-in-out;
+    z-index: 2;
+    transition: opacity 1s ease-in-out;
 }
