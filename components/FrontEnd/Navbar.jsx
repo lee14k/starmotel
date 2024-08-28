@@ -10,7 +10,7 @@ import {Libre_Caslon_Display} from "next/font/google";
 const libre = Libre_Caslon_Display({subsets: ["latin"], weight: "400"});
 const navigation = [
     {name: "Home", href: "/", current: true},
-    {name: "Book", href: "/book"},
+    {name: "Book", href: "#book"},
     {name: "About", href: "#about"},
     {name: "Nearby", href: "#local-attractions"},
     {name: "Our Rooms", href: "/our-rooms"},

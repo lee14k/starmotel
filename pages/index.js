@@ -6,6 +6,7 @@ import ReviewSlideshow from "@/components/FrontEnd/ReviewSlideshow";
 import About from "@/components/FrontEnd/About";
 import Footer from "@/components/FrontEnd/Footer";
 import ListComponent from "@/components/FrontEnd/ListComponent";
+import BookYourStayCTA from "@/components/FrontEnd/BookYourStayCTA";
 
 export default function Home() {
     const listItems = [
@@ -84,14 +85,14 @@ export default function Home() {
                 idRelativeLinking="local-attractions"
                 header="LOCAL ATTRACTIONS"
                 bodyText={
-                    <>
+                    <div className="my-24 flex flex-col gap-12 mr-32 text-2xl">
                         <p>There’s no shortage of things to do in and around Manistique, especially for the
                             outdoors-loving traveler! Check out this list of attractions and plan your visit today! </p>
                         <ListComponent items={listItems}/>
-                    </>
+                    </div>
                 } photoURL=""
                 buttonOne="Call to Book"
-                buttonTwo="Local Attractions"
+                buttonTwo="Learn More About Manistique, MI"
                 buttonOneURL="tel:+9063415363"
                 buttonTwoURL=""
                 backgroundColor="bg-starblue "
@@ -100,6 +101,7 @@ export default function Home() {
                 buttonBorderColor="border-2 border-white text-black"
                 headerColor="text-white"
             />
+            <BookYourStayCTA id="book"/>
             <Footer/>
         </div>
     );

@@ -22,8 +22,7 @@ export default function Hero() {
                     </div>
 
                 </div>
-                <div>
-                    <Image src="" alt=""/>
+                <div className="hero-image-cover">
                 </div>
             </div>
         </div>

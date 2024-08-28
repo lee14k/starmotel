@@ -35,25 +35,26 @@ export default function ReviewSlideshow() {
     return (
         <div className="flex flex-col justify-center items-center review-star-background h-[40rem] text-center">
             <h1 className="bg-inherit text-starblue text-6xl font-bold">GUEST REVIEWS</h1>
-            <div className="flex justify-center gap-24 ">
+            <div className="flex justify-center lg:gap-24 ">
 
                 <button className="arrow left-arrow" onClick={previousSlide} className="text-starorange ">
-                    <ArrowBackIosIcon sx={{fontSize: 70}}/>
+                    <ArrowBackIosIcon className="text-xs lg:text-7xl"/>
+
                 </button>
-                <div className="w-[30rem] h-[28rem] flex relative justify-center items-center">
+                <div className="w-[24rem] lg:w-[30rem] h-[28rem] flex relative justify-center items-center">
                     {reviews.map((review, index) => (
                         <div
                             key={index}
                             className={`slide flex flex-col justify-center items-center transition-opacity duration-0 gap-6 ${index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"}`}
                             style={{position: index === activeIndex ? 'relative' : 'absolute'}}
                         >
-                            <p className="pb-6 mx-24 lg:mx-0 lg:text-3xl tracking-wide text-center py-16">{review.content}</p>
+                            <p className="pb-6 mx-12 lg:mx-0 text-2xl lg:text-3xl tracking-wide text-center py-16">{review.content}</p>
                             <h3 className="text-starblue text-3xl ">{review.name}</h3>
                         </div>
                     ))}
                 </div>
                 <button className="arrow right-arrow" onClick={nextSlide} className="text-starorange ">
-                    <ArrowForwardIosIcon sx={{fontSize: 70}}/>
+                    <ArrowForwardIosIcon className="lg:text-7xl"/>
                 </button>
             </div>
         </div>

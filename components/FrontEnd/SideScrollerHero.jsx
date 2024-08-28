@@ -4,7 +4,7 @@ export default function SideScrollerHero() {
     return (
         <div className="scroll-container text-3xl bg-starorange text-white">
             <div className="carousel">
-                <ul className="flex py-10">
+                <ul className="flex  py-14">
                     <li><StarIcon/></li>
                     <li>Spacious rooms</li>
                     <li><StarIcon/></li>
@@ -20,7 +20,7 @@ export default function SideScrollerHero() {
                     <li><StarIcon/></li>
                     <li>Pet Friendly</li>
                 </ul>
-                <ul className="flex py-10">
+                <ul className="flex py-14">
                     <li><StarIcon/></li>
                     <li>Spacious rooms</li>
                     <li><StarIcon/></li>

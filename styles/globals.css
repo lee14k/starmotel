@@ -10,6 +10,7 @@
 .review-star-background {
     background-image: url('../public/review-star-bg.png');
     background-size: cover;
+    background-position: center;
 }
 
 .scroll-container {
@@ -75,4 +76,16 @@
 
 .hertical {
     font-family: 'Hertical', sans-serif;
+}
+
+.hero-image-cover {
+    background-image: url('../public/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.book-your-stay-cta {
+    background-image: url('../public/book-stay-cta.png');
+    background-size: cover;
+    background-position: center;
 }

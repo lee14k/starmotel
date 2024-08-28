@@ -23,7 +23,7 @@ export default function About({
         {text: buttonTwo, url: buttonTwoURL},
     ]
     return (
-        <div className={`${backgroundColor} grid grid-cols-3 h-[70rem]`} id={`${idRelativeLinking}`}>
+        <div className={`${backgroundColor} grid lg:grid-cols-3 h-[100rem] lg:h-[70rem]`} id={`${idRelativeLinking}`}>
             <div className="lg:col-span-2" style={{color: fontColor}}>
                 <div className="mx-24">
                     <h1 className={`${headerColor} text-6xl font-bold`}>{header}</h1>
@@ -40,7 +40,7 @@ export default function About({
                     ))}
                 </div>
             </div>
-            <div className="h-full  bg-cover" style={{backgroundImage: `url(${photoURL})`}}>
+            <div className="lg:h-full bg-cover bg-center h-[24rem] " style={{backgroundImage: `url(${photoURL})`}}>
             </div>
         </div>
     )
