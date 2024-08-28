@@ -65,3 +65,14 @@
     z-index: 2;
     transition: opacity 1s ease-in-out;
 }
+
+@font-face {
+    font-family: 'Hertical';
+    src: url('../public/fonts/hertical_sans_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hertical {
+    font-family: 'Hertical', sans-serif;
+}

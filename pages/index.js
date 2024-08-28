@@ -58,7 +58,7 @@ export default function Home() {
                 buttonTwo="Local Attractions"
                 buttonOneURL="tel:+9063415363"
                 buttonTwoURL=""
-                backgroundColor="blue"
+                backgroundColor="bg-starblue "
                 fontColor="white"
                 buttonBackgroundColor="bg-white"
                 buttonBorderColor="border-2 border-white text-black"

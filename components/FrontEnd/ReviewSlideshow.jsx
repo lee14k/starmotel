@@ -34,7 +34,7 @@ export default function ReviewSlideshow() {
     ]
     return (
         <div className="flex flex-col justify-center items-center review-star-background ">
-            <h1 className="bg-inherit">GUEST REVIEWS</h1>
+            <h1 className="bg-inherit text-starblue text-6xl font-bold">GUEST REVIEWS</h1>
             <div className="flex justify-center items-center">
 
                 <button className="arrow left-arrow" onClick={previousSlide}>
@@ -48,7 +48,7 @@ export default function ReviewSlideshow() {
                             style={{position: index === activeIndex ? 'relative' : 'absolute'}}
                         >
                             <p>{review.content}</p>
-                            <h3>{review.name}</h3>
+                            <h3 className="text-starblue text-3xl">{review.name}</h3>
                         </div>
                     ))}
                 </div>

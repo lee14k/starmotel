@@ -21,19 +21,19 @@ export default function About({
         {text: buttonTwo, url: buttonTwoURL},
     ]
     return (
-        <div className="grid lg:grid-cols-3" style={{backgroundColor: backgroundColor}} id={`${idRelativeLinking}`}>
+        <div className="grid lg:grid-cols-3" className={`${backgroundColor}`} id={`${idRelativeLinking}`}>
             <div className="col-span-2" style={{color: fontColor}}>
                 <div>
                     <h1>{header}</h1>
-                    <p>
+                    <div>
                         {bodyText}
-                    </p>
+                    </div>
                 </div>
                 <div className="flex gap-6 justify-evenly items-center">
                     {buttons.map((button, index) => (
-                        <a href={`${button.url}`}>
-                            <button key={index}
-                                    className={`${buttonBackgroundColor} ${buttonBorderColor} ${buttonTextColor}`}>{button.text}</button>
+                        <a href={`${button.url}`} key={index}>
+                            <button
+                                className={`${buttonBackgroundColor} ${buttonBorderColor} ${buttonTextColor}`}>{button.text}</button>
                         </a>
                     ))}
                 </div>

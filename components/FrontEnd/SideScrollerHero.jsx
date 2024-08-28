@@ -19,7 +19,6 @@ export default function SideScrollerHero() {
                     <li>Free WiFi</li>
                     <li><StarIcon/></li>
                     <li>Pet Friendly</li>
-                    <li><StarIcon/></li>
                 </ul>
                 <ul className="flex py-10">
                     <li><StarIcon/></li>

@@ -10,10 +10,14 @@ export default function Hero() {
                     <Navbar/>
                     <Image src="/star-motel-logo.png" width={400} height={400} alt=""/>
                     <div className="flex flex-col justify-center items-center gap-6 pb-12">
-                        <h1 className="text-4xl text-starblue">Welcome to the</h1>
-                        <h1 className="text-8xl text-starred">Star Motel</h1>
-                        <h1 className="text-4xl text-starblue">on beautiful Lake Michigan</h1>
-                        <button className="bg-starblue text-white">Call Us to Book Your Stay Today!</button>
+                        <h1 className="text-4xl text-starblue font-bold">Welcome to the</h1>
+                        <h1 className="text-8xl text-starred hertical ">Star Motel</h1>
+                        <h1 className="text-4xl text-starblue mb-2 font-bold">on beautiful Lake Michigan</h1>
+                        <a href="tel:+9063415363">
+                            <button className="bg-starblue text-white py-8 px-4 text-3xl">Call Us to Book Your Stay
+                                Today!
+                            </button>
+                        </a>
                     </div>
 
                 </div>
