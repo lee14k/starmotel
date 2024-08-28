@@ -2,7 +2,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 export default function SideScrollerHero() {
     return (
-        <div className="scroll-container text-3xl bg-orange-500 text-white">
+        <div className="scroll-container text-3xl bg-starorange text-white">
             <div className="carousel">
                 <ul className="flex py-10">
                     <li><StarIcon/></li>

@@ -34,9 +34,10 @@ export default function TriplePhotoStarBackground() {
             <div className="flex gap-6 justify-evenly items-center">
                 {images.map((image, index) => (
                     <Link href={`${image.link}`}>
-                        <div className="flex flex-col justify-center items-center bg-white" key={index}>
-                            <img src={image.src} width={400} height={400} alt=""/>
-                            <div><h1>{image.heading} </h1></div>
+                        <div className="container mx-auto flex flex-col justify-center items-center bg-white px-12 py-6"
+                             key={index}>
+                            <img src={image.src} width={300} height={300} alt=""/>
+                            <div><h1 className="text-starblue text-3xl">{image.heading} </h1></div>
                         </div>
                     </Link>
                 ))}

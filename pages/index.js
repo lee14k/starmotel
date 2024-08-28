@@ -41,8 +41,8 @@ export default function Home() {
                 buttonTwo="Local Attractions"
                 buttonOneURL="tel:+9063415363"
                 buttonTwoURL=""
-                buttonBackgroundColor="bg-orange-500"
-                buttonBorderColor="border-2 border-orange-500"
+                buttonBackgroundColor="bg-starorange"
+                buttonBorderColor="border-2 border-starorange"
             />
             <About
                 idRelativeLinking="local-attractions"
