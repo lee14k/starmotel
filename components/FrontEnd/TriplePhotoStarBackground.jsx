@@ -39,7 +39,7 @@ export default function TriplePhotoStarBackground() {
                         <div className="container mx-auto flex flex-col justify-center items-center bg-white px-12 py-6"
                         >
                             <img src={image.src} width={300} height={300} alt=""/>
-                            <div><h1 className="text-starblue text-3xl">{image.heading} </h1></div>
+                            <div><h1 className="text-starblue text-3xl font-bold">{image.heading} </h1></div>
                         </div>
                     </Link>
                 ))}

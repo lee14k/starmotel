@@ -14,18 +14,20 @@ export default function About({
                                   buttonBackgroundColor,
                                   buttonBorderColor,
                                   buttonTextColor,
-                                  idRelativeLinking
+                                  idRelativeLinking,
+                                  headerColor,
+                                  bodyTextColor
                               }) {
     const buttons = [
         {text: buttonOne, url: buttonOneURL},
         {text: buttonTwo, url: buttonTwoURL},
     ]
     return (
-        <div className="grid lg:grid-cols-3" className={`${backgroundColor}`} id={`${idRelativeLinking}`}>
-            <div className="col-span-2" style={{color: fontColor}}>
-                <div>
-                    <h1>{header}</h1>
-                    <div>
+        <div className={`${backgroundColor} grid grid-cols-3 h-[60rem]`} id={`${idRelativeLinking}`}>
+            <div className="lg:col-span-2" style={{color: fontColor}}>
+                <div className="mx-24">
+                    <h1 className={`${headerColor} text-6xl font-bold`}>{header}</h1>
+                    <div className={`${bodyTextColor}`}>
                         {bodyText}
                     </div>
                 </div>
@@ -38,8 +40,7 @@ export default function About({
                     ))}
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${photoURL})`}}>
-
+            <div className="h-full  bg-cover" style={{backgroundImage: `url(${photoURL})`}}>
             </div>
         </div>
     )

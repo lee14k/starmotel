@@ -33,27 +33,27 @@ export default function ReviewSlideshow() {
         }
     ]
     return (
-        <div className="flex flex-col justify-center items-center review-star-background ">
+        <div className="flex flex-col justify-center items-center review-star-background h-[40rem] ">
             <h1 className="bg-inherit text-starblue text-6xl font-bold">GUEST REVIEWS</h1>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center gap-24 ">
 
-                <button className="arrow left-arrow" onClick={previousSlide}>
-                    <ArrowBackIosIcon sx={{fontSize: 50}}/>
+                <button className="arrow left-arrow" onClick={previousSlide} className="text-starorange ">
+                    <ArrowBackIosIcon sx={{fontSize: 70}}/>
                 </button>
-                <div className="w-[30rem] h-[25rem] flex relative justify-center items-center">
+                <div className="w-[30rem] h-[28rem] flex relative justify-center items-center">
                     {reviews.map((review, index) => (
                         <div
                             key={index}
-                            className={`slide flex flex-col justify-center items-center transition-opacity duration-0 ${index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"}`}
+                            className={`slide flex flex-col justify-center items-center transition-opacity duration-0 gap-6 ${index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"}`}
                             style={{position: index === activeIndex ? 'relative' : 'absolute'}}
                         >
-                            <p>{review.content}</p>
-                            <h3 className="text-starblue text-3xl">{review.name}</h3>
+                            <p className="pb-6 text-3xl tracking-wide text-center py-16">{review.content}</p>
+                            <h3 className="text-starblue text-3xl ">{review.name}</h3>
                         </div>
                     ))}
                 </div>
-                <button className="arrow right-arrow" onClick={nextSlide}>
-                    <ArrowForwardIosIcon sx={{fontSize: 50}}/>
+                <button className="arrow right-arrow" onClick={nextSlide} className="text-starorange ">
+                    <ArrowForwardIosIcon sx={{fontSize: 70}}/>
                 </button>
             </div>
         </div>

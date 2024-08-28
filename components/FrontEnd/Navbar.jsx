@@ -27,7 +27,7 @@ export default function Navbar() {
         setActiveDropdown(activeDropdown === itemName ? null : itemName);
     };
     return (
-        <div className={`text-4xl lg:text-6xl font-bold`}>
+        <div className={`text-4xl lg:text-6xl font-bold text-starblue`}>
             {" "}
             {/* Added a surrounding div */}
             {isMobile ? (

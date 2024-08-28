@@ -35,7 +35,39 @@ export default function Home() {
             <About
                 idRelativeLinking="about"
                 header="ABOUT THE STAR MOTEL"
-                bodyText="The Star Motel has been a family-owned business since 1955, and we pride ourselves on exceptional hospitality, immaculate rooms, and that warm, welcoming feeling of staying at your grandma's for the weekend. Our motel features 20 spacious, meticulously cleaned and remodeled rooms, each equipped with a tub/shower combination, color cable TV, refrigerator, and air conditioning. Enjoy the convenience of free wireless internet access and complimentary morning coffee in our office. Our amenities also include direct beach access, making it easy for you to enjoy the stunning shores of Lake Michigan. Our prime location provides easy access to local restaurants, shopping, and the nearby casino, making it an ideal spot for both relaxation and adventure. Whether you're here for summer activities like fishing and boating or winter sports such as snowmobiling, or hunting, the Star Motel is the perfect base for your Upper Peninsula adventures. At the Star Motel, we ensure every guest feels welcome and at home. Our pet-friendly policy means you can bring your furry friends along for the trip too! For reservations and availability, please call us at 906-341-5363. We look forward to making your stay a memorable one!"
+                bodyText={<>
+                    <div className="my-24 flex flex-col gap-12 mr-24 text-2xl text-starblue ">
+                        <p>
+                            The Star Motel has been a family-owned business since 1955, and we pride
+                            ourselves on exceptional
+                            hospitality, immaculate rooms, and that warm, welcoming feeling of staying at your grandma's
+                            for
+                            the weekend.
+                        </p>
+                        <p> Our motel features 20 spacious, meticulously cleaned and remodeled rooms, each
+                            equipped with a tub/shower combination, color cable TV, refrigerator, and air conditioning.
+                            Enjoy the convenience of free wireless internet access and complimentary morning coffee in
+                            our
+                            office. Our amenities also include direct beach access, making it easy for you to enjoy the
+                            stunning shores of Lake Michigan.</p>
+                        <p>
+                            Our prime location provides easy access to local restaurants,
+                            shopping, and the nearby casino, making it an ideal spot for both relaxation and adventure.
+                            Whether you're here for summer activities like fishing and boating or winter sports such as
+                            snowmobiling, or hunting, the Star Motel is the perfect base for your Upper Peninsula
+                            adventures.
+                        </p>
+                        <p>
+                            At the Star Motel, we ensure every guest feels welcome and at home. Our pet-friendly
+                            policy means you can bring your furry friends along for the trip too! For reservations and
+                            availability, please call us at 906-341-5363. We look forward to making your stay a
+                            memorable
+                            one!
+                        </p>
+                    </div>
+
+                </>
+                }
                 photoURL=""
                 buttonOne="Call to Book"
                 buttonTwo="Local Attractions"
@@ -43,6 +75,9 @@ export default function Home() {
                 buttonTwoURL=""
                 buttonBackgroundColor="bg-starorange"
                 buttonBorderColor="border-2 border-starorange"
+                photoURL="/Rocks-Sunrise-8901.jpg"
+                backgroundColor="bg-white"
+                headerColor="text-starorange"
             />
             <About
                 idRelativeLinking="local-attractions"
@@ -62,6 +97,7 @@ export default function Home() {
                 fontColor="white"
                 buttonBackgroundColor="bg-white"
                 buttonBorderColor="border-2 border-white text-black"
+                headerColor="text-white"
             />
             <Footer/>
         </div>
