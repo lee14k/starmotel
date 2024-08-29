@@ -10,16 +10,16 @@ import BookYourStayCTA from "@/components/FrontEnd/BookYourStayCTA";
 
 export default function Home() {
     const listItems = [
-        {text: "Fayette Historic Village “the Ghost Town”", url: "/"},
-        {text: "Big Springs Kitch-iti-Kipi", url: ""},
-        {text: "Seney National Wildlife Refuge", url: ""},
-        {text: "Seul Choix Lighthouse, known locally as the Haunted Lighthouse", url: ""},
-        {text: "Tahquamenon Falls", url: ""},
-        {text: "Whitefish Point Lighthouse", url: ""},
-        {text: "Great Lakes Shipwreck Museum", url: ""},
-        {text: "Pictured Rocks", url: ""},
-        {text: "Point Iroquois", url: ""},
-        {text: "AuSable Lighthouses and Museum", url: ""},
+        {text: "Fayette Historic Village", url: "https://www.michigan.gov/mhc/museums/fayette"},
+        {text: "Kitch-iti-Kipi (Big Springs_", url: "http://www.visitmanistique.com/bigspring.shtml"},
+        {text: "Seney National Wildlife Refuge", url: "https://www.fws.gov/refuge/seney"},
+        {text: "Seul Choix Lighthouse", url: "https://www.greatlakelighthouse.com/"},
+        {text: "Tahquamenon Falls", url: "https://www.michigan.org/property/tahquamenon-falls-state-park"},
+        {text: "Whitefish Point Lighthouse", url: "https://shipwreckmuseum.com/visit/whitefish-point-light/},
+        {text: "Great Lakes Shipwreck Museum", url: "https://shipwreckmuseum.com/"},
+        {text: "Pictured Rocks", url: "https://www.munising.org/explore/pictured-rocks-national-lakeshore/"},
+        {text: "Point Iroquois", url: "https://saultstemarie.com/attractions/point-iroquois-lighthouse/"},
+        {text: "AuSable Lighthouses and Museum", url: "https://www.michigan.org/property/au-sable-light-station"},
         {
             text: "Hundreds of acres of public land in the Hiawatha National Forest for fishing, paddling, biking, hunting, and hiking!",
             url: ""
@@ -87,19 +87,21 @@ export default function Home() {
                 bodyText={
                     <div className="my-24 flex flex-col gap-12 mr-32 text-2xl">
                         <p>There’s no shortage of things to do in and around Manistique, especially for the
-                            outdoors-loving traveler! Check out this list of attractions and plan your visit today! </p>
+                            outdoors-loving traveler! Check out this list of attractions and plan your visit today!
+                            CLick each link and check out the adventures you can have during your stay with us </p>
                         <ListComponent items={listItems}/>
                     </div>
                 } photoURL=""
                 buttonOne="Call to Book"
                 buttonTwo="Learn More About Manistique, MI"
                 buttonOneURL="tel:+9063415363"
-                buttonTwoURL=""
+                buttonTwoURL="https://www.discovermanistique.com/"
                 backgroundColor="bg-starblue "
                 fontColor="white"
                 buttonBackgroundColor="bg-white"
                 buttonBorderColor="border-2 border-white text-black"
                 headerColor="text-white"
+                photoURL="/lh.jpg"
             />
             <BookYourStayCTA id="book"/>
             <Footer/>
