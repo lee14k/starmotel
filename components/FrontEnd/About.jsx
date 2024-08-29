@@ -23,10 +23,10 @@ export default function About({
         {text: buttonTwo, url: buttonTwoURL},
     ]
     return (
-        <div className={`${backgroundColor} grid lg:grid-cols-3 h-[100rem] lg:h-[70rem]`} id={`${idRelativeLinking}`}>
+        <div className={`${backgroundColor} grid lg:grid-cols-3 h-[100rem] lg:h-[75rem]`} id={`${idRelativeLinking}`}>
             <div className="lg:col-span-2" style={{color: fontColor}}>
                 <div className="mx-24">
-                    <h1 className={`${headerColor} text-6xl font-bold`}>{header}</h1>
+                    <h1 className={`${headerColor} text-6xl font-bold my-8`}>{header}</h1>
                     <div className={`${bodyTextColor}`}>
                         {bodyText}
                     </div>
