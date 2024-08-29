@@ -10,8 +10,6 @@ export default function SideScrollerHero() {
                     <li><StarIcon/></li>
                     <li>Open year round</li>
                     <li><StarIcon/></li>
-                    <li>Picnic tables and grills on the shore of Lake Michigan</li>
-                    <li><StarIcon/></li>
                     <li>Easy access to the snowmobile trails</li>
                     <li><StarIcon/></li>
                     <li>Affordable rates</li>
@@ -25,8 +23,6 @@ export default function SideScrollerHero() {
                     <li>Spacious rooms</li>
                     <li><StarIcon/></li>
                     <li>Open year round</li>
-                    <li><StarIcon/></li>
-                    <li>Picnic tables and grills on the shore of Lake Michigan</li>
                     <li><StarIcon/></li>
                     <li>Easy access to the snowmobile trails</li>
                     <li><StarIcon/></li>
