@@ -4,17 +4,17 @@ export default function TriplePhotoStarBackground() {
     const images = [
         {
             heading: 'What’s Nearby',
-            imageSrc: './pic',
+            imageSrc: '/falls.jpg',
             link: '#local-attractions'
         },
         {
             heading: 'Check out our rooms',
-            imageSrc: './pic',
+            imageSrc: '/our-rooms.jpg',
             link: '/our-rooms'
         },
         {
             heading: 'About the Star Motel',
-            imageSrc: './pic',
+            imageSrc: '/star-shot-out-2.jpg',
             link: '#about'
         },
     ]
@@ -38,9 +38,9 @@ export default function TriplePhotoStarBackground() {
             <div className="flex flex-col lg:flex-row gap-6 justify-evenly items-center">
                 {images.map((image, index) => (
                     <Link href={`${image.link}`} key={index}>
-                        <div className="container mx-auto flex flex-col justify-center items-center bg-white px-12 py-6"
+                        <div className="container mx-auto flex flex-col justify-center items-center bg-white px-12 py-8"
                         >
-                            <img src={image.src} width={300} height={300} alt=""/>
+                            <img src={image.imageSrc} width={400} height={400} alt=""/>
                             <div><h1 className="text-starblue text-3xl font-bold">{image.heading} </h1></div>
                         </div>
                     </Link>
