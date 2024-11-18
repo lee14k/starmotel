@@ -89,3 +89,9 @@
     background-size: cover;
     background-position: center;
 }
+
+@layer base {
+  :root {
+        --radius: 0.5rem;
+    }
+}

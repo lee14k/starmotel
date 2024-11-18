@@ -1,11 +1,12 @@
 import Footer from "@/components/FrontEnd/Footer";
-import Navbar from "@/components/FrontEnd/Navbar";
+import SpecialNav from "@/components/FrontEnd/SpecialNav";
+import HotelPage from "@/components/FrontEnd/HotelPage";
 
 export default function OurRooms() {
     return (
         <div>
-            <Navbar/>
-
+            <SpecialNav/>
+            <HotelPage/>
             <Footer/>
         </div>
     )

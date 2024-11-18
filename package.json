@@ -15,13 +15,21 @@
     "@heroicons/react": "^2.1.5",
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.4.0",
     "framer-motion": "^11.3.30",
     "hamburger-react": "^2.5.1",
+    "lucide-react": "^0.460.0",
     "next": "14.2.6",
     "react": "^18",
     "react-dom": "^18",
     "react-responsive": "^10.0.0",
-    "react-use": "^17.5.1"
+    "react-use": "^17.5.1",
+    "shadcn": "^2.1.6",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "postcss": "^8",
