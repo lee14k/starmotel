@@ -23,15 +23,15 @@ export default function About({
         {text: buttonTwo, url: buttonTwoURL},
     ];
     return (
-        <div className={`${backgroundColor} grid lg:grid-cols-3`} id={`${idRelativeLinking}`}>
+        <div className={`${backgroundColor} grid lg:grid-cols-3 pb-12`} id={`${idRelativeLinking}`}>
             <div className="lg:col-span-2" style={{color: fontColor}}>
-                <div className="mx-24">
-                    <h1 className={`${headerColor} text-6xl font-bold my-8`}>{header}</h1>
+                <div className="lg:mx-24 flex flex-col justify-center items-center">
+                    <h1 className={`${headerColor} text-6xl font-bold my-8 text-center`}>{header}</h1>
                     <div className={`${bodyTextColor}`}>
                         {bodyText}
                     </div>
                 </div>
-                <div className="flex gap-6 justify-evenly items-center">
+                <div className="flex lg:flex-row flex-col gap-6  lg:justify-evenly lg:items-center">
                     {buttons.map((button, index) => (
                         <a href={`${button.url}`} key={index}>
                             <button

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <div className="flex justify-between items-center">
+        <div className="flex lg:flex-row flex-col justify-between items-center">
             <div className="mx-8 text-center">
                 <h3 className="text-starblue text-4xl font-bold my-6">The Star Motel</h3>
                 <div className="text-3xl ">
