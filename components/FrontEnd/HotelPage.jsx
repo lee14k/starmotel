@@ -15,14 +15,14 @@ const HotelPage = () => {
             title: "Single Room",
             image: "/0998-Single.jpg",
             description: "Modern comfort meets elegant design in our single rooms. Each room features a plush queen-size bed, dedicated workspace, and ensuite bathroom with rainfall shower.",
-            amenities: ["Queen-size bed", "40-inch Smart TV", "High-speed WiFi", "Mini fridge", "Coffee maker"]
+            amenities: ["Queen-size bed", "Television", "High-speed WiFi", "Mini fridge", "Coffee maker"]
         },
         {
             id: 2,
             title: "Double Room",
             image: "/4702-Double.jpg",
             description: "Spacious double rooms perfect for families or friends traveling together. Featuring two comfortable double beds and a cozy sitting area with ocean views.",
-            amenities: ["Two double beds", "Sitting area", "Ocean view", "Large wardrobe", "Tea/coffee station"]
+            amenities: ["Two double beds", "Sitting area", "High-speed WiFi", "Large wardrobe", "Tea/coffee station"]
         }
     ];
     return (
@@ -37,7 +37,7 @@ const HotelPage = () => {
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <div className="text-center text-white">
                         <h1 className="text-5xl font-bold mb-4">Welcome to the Star Motel</h1>
-                        <p className="text-xl">Experience the UP</p>
+                        <p className="text-xl">Experience the UP right in our backyard!</p>
                     </div>
                 </div>
             </section>
@@ -89,11 +89,10 @@ const HotelPage = () => {
                         <div>
                             <h2 className="text-3xl font-bold mb-6">Lake views are just a step away!</h2>
                             <p className="text-gray-600 mb-6">
-                                Step onto pristine white sands just steps from your room. Our private beach
-                                offers a perfect retreat for sunbathing, swimming, and watching spectacular
-                                sunsets over the ocean.
+                                Looking for lake views? We've got them! Just a short walk from your room will bring you
+                                to the beach, where you can see incredible sunsets and sunrises.
                             </p>
-                           
+
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                             <img
