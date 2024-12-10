@@ -6,7 +6,9 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+import {Montserrat} from 'next/font/google';
 
+const montserrat = Montserrat({subsets: ['latin']});
 const HotelPage = () => {
     // Sample room data - replace with your actual data
     const roomSlides = [
@@ -23,6 +25,12 @@ const HotelPage = () => {
             image: "/4702-Double.jpg",
             description: "Spacious double rooms perfect for families or friends traveling together. Featuring two comfortable double beds and a cozy sitting area with ocean views.",
             amenities: ["Two double beds", "Sitting area", "High-speed WiFi", "Large wardrobe", "Tea/coffee station"]
+        },
+        {
+            id: 3,
+            title: "Clean Bathrooms",
+            image: "/4702-Double.jpg",
+            description: "Bathrooms are cleaned daily and are stocked with fresh towels and toiletries.",
         }
     ];
     return (
@@ -36,8 +44,8 @@ const HotelPage = () => {
                 />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <div className="text-center text-white">
-                        <h1 className="text-5xl font-bold mb-4">Welcome to the Star Motel</h1>
-                        <p className="text-xl">Experience the UP right in our backyard!</p>
+                        <h1 className={`text-6xl font-bold mb-4 ${montserrat.className}`}>Welcome to the Star Motel</h1>
+                        <p className="text-3xl">Experience the UP right in our backyard!</p>
                     </div>
                 </div>
             </section>
@@ -62,13 +70,17 @@ const HotelPage = () => {
                                                 {room.description}
                                             </p>
                                             <div className="border-t border-b border-gray-200 py-6">
-                                                <h4 className="text-lg font-semibold mb-4">Room Amenities</h4>
+
                                                 <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
-                                                    {room.amenities.map((amenity, index) => (
-                                                        <span key={index} className="text-gray-600">
-                              • {amenity}
-                            </span>
-                                                    ))}
+                                                    {room.amenities ? (
+                                                        room.amenities.map((amenity, index) => (
+                                                            <span key={index} className="text-gray-600">
+            • {amenity}
+        </span>
+                                                        ))
+                                                    ) : (
+                                                        <span className="text-gray-600"></span>
+                                                    )}
                                                 </div>
                                             </div>
                                         </div>
@@ -87,7 +99,8 @@ const HotelPage = () => {
                 <div className="max-w-6xl mx-auto">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div>
-                            <h2 className="text-3xl font-bold mb-6">Lake views are just a step away!</h2>
+                            <h2 className={`text-3xl font-bold mb-6 ${montserrat.className}`}>Lake views are just a step
+                                away!</h2>
                             <p className="text-gray-600 mb-6">
                                 Looking for lake views? We've got them! Just a short walk from your room will bring you
                                 to the beach, where you can see incredible sunsets and sunrises.

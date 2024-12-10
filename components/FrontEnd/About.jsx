@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import {Montserrat} from 'next/font/google';
 
+const montserrat = Montserrat({subsets: ['latin']});
 export default function About({
                                   header,
                                   bodyText,
@@ -26,7 +28,7 @@ export default function About({
         <div className={`${backgroundColor} grid lg:grid-cols-3 pb-12`} id={`${idRelativeLinking}`}>
             <div className="lg:col-span-2" style={{color: fontColor}}>
                 <div className="lg:mx-24 flex flex-col justify-center items-center">
-                    <h1 className={`${headerColor} text-6xl font-bold my-8 text-center`}>{header}</h1>
+                    <h1 className={`${headerColor} text-6xl font-bold my-8 text-center ${montserrat.className}`}>{header}</h1>
                     <div className={`${bodyTextColor}`}>
                         {bodyText}
                     </div>
@@ -35,7 +37,7 @@ export default function About({
                     {buttons.map((button, index) => (
                         <a href={`${button.url}`} key={index}>
                             <button
-                                className={`${buttonBackgroundColor} ${buttonBorderColor} ${buttonTextColor} py-8 px-4 text-3xl font-bold`}>{button.text}</button>
+                                className={`${buttonBackgroundColor} ${buttonBorderColor} ${montserrat.className} ${buttonTextColor} py-8 px-4 text-3xl font-bold`}>{button.text}</button>
                         </a>
                     ))}
                 </div>

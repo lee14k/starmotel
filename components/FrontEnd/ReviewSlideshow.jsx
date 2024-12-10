@@ -1,7 +1,9 @@
 import {useState} from "react";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import {Montserrat} from 'next/font/google';
 
+const montserrat = Montserrat({subsets: ['latin']});
 export default function ReviewSlideshow() {
     const [activeIndex, setActiveIndex] = useState(0);
     const previousSlide = () => {
@@ -34,7 +36,7 @@ export default function ReviewSlideshow() {
     ]
     return (
         <div className="flex flex-col justify-center items-center review-star-background h-[40rem] text-center">
-            <h1 className="bg-inherit text-starblue text-6xl font-bold">GUEST REVIEWS</h1>
+            <h1 className={`bg-inherit text-starblue text-5xl font-bold ${montserrat.className}`}>GUEST REVIEWS</h1>
             <div className="flex justify-center lg:gap-24 ">
 
                 <button className="arrow left-arrow" onClick={previousSlide} className="text-starorange ">
@@ -49,7 +51,7 @@ export default function ReviewSlideshow() {
                             style={{position: index === activeIndex ? 'relative' : 'absolute'}}
                         >
                             <p className="pb-6 mx-12 lg:mx-0 text-2xl lg:text-3xl tracking-wide text-center py-16">{review.content}</p>
-                            <h3 className="text-starblue text-3xl ">{review.name}</h3>
+                            <h3 className={`text-starblue text-3xl font-bold ${montserrat.className}`}>{review.name}</h3>
                         </div>
                     ))}
                 </div>

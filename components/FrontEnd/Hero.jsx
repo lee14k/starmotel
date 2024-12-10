@@ -17,7 +17,9 @@ export default function Hero() {
                         <h1 className={`text-8xl text-starred font-bold ${montserrat.className}`}>Star Motel</h1>
                         <h1 className="text-4xl text-starblue mb-2 font-bold">Located on beautiful Lake Michigan </h1>
                         <a href="tel:+9063415363">
-                            <button className="bg-starblue text-white py-8 px-4 text-3xl font-bold">Call Us to Book Your
+                            <button
+                                className={`bg-starblue text-white py-8 px-4 text-3xl font-bold ${montserrat.className}`}>Call
+                                Us to Book Your
                                 Stay
                                 Today!
                             </button>
@@ -31,14 +33,14 @@ export default function Hero() {
                 <div><Image src="/star-shot-out-2.jpg" width={800} height={800} alt="" className="py-12 mx-10"/>
                 </div>
                 <div className="flex flex-col justify-center items-center text-center gap-6 mx-8"><h2
-                    className="text-5xl">Big adventures with
+                    className={`text-5xl font-bold ${montserrat.className}`}>Big adventures with
                     small-town comfort</h2>
                     <p className="text-2xl">Enjoy the beauty of the Upper Peninsula, right from rustic Manistique, MI.
                         Comfortable, cozy
                         rooms await after a day of adventuring in the Upper Peninsula. </p>
                     <a href="tel:+9063415363">
                         <button
-                            className="bg-starorange border-2 border-starorange text-white py-8 px-4 text-3xl font-bold"
+                            className={`bg-starorange border-2 border-starorange text-white py-8 px-4 text-3xl font-bold ${montserrat.className}`}
                         >Call to Book
                         </button>
                     </a>

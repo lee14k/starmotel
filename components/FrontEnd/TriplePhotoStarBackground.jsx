@@ -1,5 +1,7 @@
 import Link from 'next/link'
+import {Montserrat} from 'next/font/google';
 
+const montserrat = Montserrat({subsets: ['latin']});
 export default function TriplePhotoStarBackground() {
     const images = [
         {
@@ -22,7 +24,7 @@ export default function TriplePhotoStarBackground() {
         <div className="blue-star-background h-full py-12 flex flex-col gap-12 lg:mt-0 mt-10">
             <div
                 className="flex lg:flex-row flex-col my-6 mx-6 text-white justify-center items-center text-center lg:text-left ">
-                <h1 className=" font-bold text-6xl">YOUR HOME AWAY
+                <h1 className={`text-5xl font-bold ${montserrat.className}`}>YOUR HOME AWAY
                     FROM HOME IN
                     MANISTIQUE, MI!</h1>
                 <p className="mx-42 lg:ml-64 text-3xl">Enjoy Michigan’s beautiful Upper Peninsula and Lake Michigan at
@@ -41,7 +43,9 @@ export default function TriplePhotoStarBackground() {
                         <div className="container mx-auto flex flex-col justify-center items-center bg-white px-12 py-8"
                         >
                             <img src={image.imageSrc} width={400} height={400} alt=""/>
-                            <div><h1 className="text-starblue text-3xl font-bold">{image.heading} </h1></div>
+                            <div><h1
+                                className={`text-starblue text-5xl font-bold ${montserrat.className}`}>{image.heading} </h1>
+                            </div>
                         </div>
                     </Link>
                 ))}

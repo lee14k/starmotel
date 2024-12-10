@@ -1,8 +1,10 @@
 import StarIcon from '@mui/icons-material/Star';
+import {Montserrat} from 'next/font/google';
 
+const montserrat = Montserrat({subsets: ['latin']});
 export default function SideScrollerHero() {
     return (
-        <div className="scroll-container text-3xl bg-starorange text-white pb-36">
+        <div className={`scroll-container font-bold text-3xl bg-starorange text-white pb-36 ${montserrat.className}`}>
             <div className="carousel">
                 <ul className="flex py-14">
                     <li><StarIcon/></li>
